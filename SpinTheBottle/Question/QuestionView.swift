@@ -39,7 +39,7 @@ struct QuestionView: View {
                                 self.presentationMode.wrappedValue.dismiss()}) {
                             Text("I GOT IT!")
                                 .foregroundColor(.white)
-                                .frame(width: 300, height: 30)
+                                .frame(width: 300, height: 40)
                                 .background(Color("Green"))
                                 .cornerRadius(7)
                                 .shadow(radius: 4)
@@ -48,7 +48,7 @@ struct QuestionView: View {
                         Button(action: {self.presentationMode.wrappedValue.dismiss()}) {
                             Text("DIDN'T MAKE IT")
                                 .foregroundColor(.white)
-                                .frame(width: 300, height: 30)
+                                .frame(width: 300, height: 40)
                                 .background(Color("Red"))
                                 .cornerRadius(7)
                                 .shadow(radius: 4)
