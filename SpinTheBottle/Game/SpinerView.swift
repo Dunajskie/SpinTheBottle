@@ -36,7 +36,6 @@ struct SpinerView: View {
     }
     mutating func rotate(angle: Double) {
         self.rotation = angle
-        print(rotation)
     }
 }
 

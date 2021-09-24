@@ -58,7 +58,11 @@ struct ContentView: View {
                 }
                     .sheet(isPresented: $showQuestionView, content: {
                         NavigationView {
-                            QuestionView(quest: questions[0], questionType: questionType, person: settings.persons[settings.selectedPerson - 1])
+                            if questionType == "Truth" {
+                                QuestionView(quest: getQuestion(type: "Truth"), questionType: questionType, person: settings.persons[settings.selectedPerson - 1])
+                            } else {
+                                QuestionView(quest: getQuestion(type: "Dare"), questionType: questionType, person: settings.persons[settings.selectedPerson - 1])
+                            }
                         }
                         })
             }
@@ -80,6 +84,16 @@ struct ContentView: View {
         
       }.environmentObject(settings)
     }
+    func getQuestion(type: String) -> Question {
+        var array: [Question] = []
+        for question in questions {
+            if question.type == type {
+                array.append(question)
+            }
+        }
+        return array.randomElement() ?? array[0]
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

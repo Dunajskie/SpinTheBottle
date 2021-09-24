@@ -15,37 +15,47 @@ struct QuestionView: View {
     var person: Person
     var body: some View {
         NavigationView {
-            VStack {
-                HStack {
-                    Text(questionType == "Truth" ? "Your question:" : "Your task:")
-                        .bold()
-                        .padding()
-                    Text(questionType == "Truth" ? "\(person.name == "Add person details" ? "Person" : person.name), \((quest.question ?? ""))" : "\(person.name == "Add person details" ? "Person" : person.name), \((quest.question ?? ""))")
-                    Spacer()
-                }
-                
-                Spacer()
+            ZStack {
+                Color("LightPink")
+                    .edgesIgnoringSafeArea(.all)
                 VStack {
-                    Button(action: {
-                            settings.persons[settings.selectedPerson-1].points += 1
-                            print(settings.persons[settings.selectedPerson-1].points)
-                            self.presentationMode.wrappedValue.dismiss()}) {
-                        Text("I GOT IT!")
-                            .foregroundColor(.white)
-                            .frame(width: 300, height: 30)
-                            .background(Color.green)
-                            .cornerRadius(7)
-                            .padding(4)
+                    HStack() {
+                        Spacer()
                     }
-                    Button(action: {self.presentationMode.wrappedValue.dismiss()}) {
-                        Text("DIDN'T MAKE IT")
-                            .foregroundColor(.white)
-                            .frame(width: 300, height: 30)
-                            .background(Color.red)
-                            .cornerRadius(7)
-                            
+                    VStack(alignment: .leading) {
+                        Text(questionType == "Truth" ? "Your question:" : "Your task:")
+                            .font(.system(size: 30))
+                            .bold()
+                            .padding(.horizontal)
+                        Text(questionType == "Truth" ? "\(person.name == "Add person details" ? "Person" : person.name), \((quest.question ?? ""))" : "\(person.name == "Add person details" ? "Person" : person.name), \((quest.question ?? ""))")
+                            .font(.system(size: 30))
+                            .padding()
                     }
-                    .padding(.bottom)
+                    
+                    Spacer()
+                    VStack {
+                        Button(action: {
+                                settings.persons[settings.selectedPerson-1].points += 1
+                                self.presentationMode.wrappedValue.dismiss()}) {
+                            Text("I GOT IT!")
+                                .foregroundColor(.white)
+                                .frame(width: 300, height: 30)
+                                .background(Color("Green"))
+                                .cornerRadius(7)
+                                .shadow(radius: 4)
+                                .padding(4)
+                        }
+                        Button(action: {self.presentationMode.wrappedValue.dismiss()}) {
+                            Text("DIDN'T MAKE IT")
+                                .foregroundColor(.white)
+                                .frame(width: 300, height: 30)
+                                .background(Color("Red"))
+                                .cornerRadius(7)
+                                .shadow(radius: 4)
+                                
+                        }
+                        .padding(.bottom)
+                    }
                 }
             }
         }
