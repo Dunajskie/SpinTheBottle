@@ -34,7 +34,7 @@ struct ContentView: View {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
                                 self.showingActionSheet.toggle()
                                     }
-                                
+                           // print(questions.count)
                                 }, label: {
                                     Text( "PLAY" )
                                         .foregroundColor(.white)
@@ -70,10 +70,13 @@ struct ContentView: View {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     NavigationLink(destination: SettingsView()) {
                             Image(systemName: "slider.horizontal.3")
-                        }
-                        NavigationLink(destination: ScoresView()) {
-                            Image(systemName: "circle.grid.cross")
-                        }
+                    }
+                    NavigationLink(destination: ScoresView()) {
+                        Image(systemName: "circle.grid.cross")
+                    }
+                    NavigationLink(destination: AddToGameView( contentView: self)) {
+                        Image(systemName: "plus")
+                    }
                 }
             }
         }

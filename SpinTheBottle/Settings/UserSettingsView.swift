@@ -13,10 +13,14 @@ struct UserSettingsView: View {
     @State var name = "Name"
     @State var avatar = "🐶"
     var avatars = ["🐶","🐹","🦊","🐼","🐨","🦁","🐸","🐺","🦄","🦋"]
+    @State var avatarChanged = false
+    @State var nameChanged = false
     var body: some View {
         Form {
             Section(header: Text("Name")) {
-                TextField("Enter your name", text: $name)
+                TextField("Enter your name", text: $name, onCommit: {
+                    nameChanged = true
+                })
                 }
             Section(header: Text("Avatar")) {
                 Picker("Pick your avatar", selection: $avatar) {
@@ -25,27 +29,32 @@ struct UserSettingsView: View {
                     }
                 }
                 .pickerStyle(WheelPickerStyle())
-                .onChange(of: name, perform: { name in
-                    var index = 0
-                    for person in settings.persons {
-                        if person.id == user.id {
-                            settings.persons[index].name = name
-                        }
-                        index += 1
-                    }
-                })
                 .onChange(of: avatar, perform: { avatar in
-                    var index = 0
-                    for person in settings.persons {
-                        if person.id == user.id {
-                            settings.persons[index].avatar = avatar
-                        }
-                        index += 1
-                    }
+                    avatarChanged = true
                 })
             }
         }
         .navigationTitle("Details")
+        .onDisappear(perform: {
+            if nameChanged {
+                var index = 0
+                for person in settings.persons {
+                    if person.id == user.id {
+                        settings.persons[index].name = name
+                    }
+                    index += 1
+                }
+            }
+            if avatarChanged {
+                var index = 0
+                for person in settings.persons {
+                    if person.id == user.id {
+                        settings.persons[index].avatar = avatar
+                    }
+                    index += 1
+                }
+            }
+        })
     }
 }
 
