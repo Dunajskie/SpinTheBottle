@@ -19,6 +19,7 @@ struct SpinerView: View {
             LineView(angle: 2 * .pi * CGFloat(Float(i) / Float(number)))
         }
     }
+    
     var body: some View {
         GeometryReader { proxy in
             ZStack {
@@ -28,8 +29,8 @@ struct SpinerView: View {
                 lines
                 LogosView(persons: settings.persons, number: Float(settings.numberOfPlayers) ?? 0)
                 ArrowView()
-                        .rotationEffect(Angle.degrees(rotation))
-                        .animation(animation)
+                    .rotationEffect(Angle.degrees(rotation))
+                    .animation(animation)
                 
             }
         }

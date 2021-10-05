@@ -12,7 +12,7 @@ struct SpinTheBottleApp: App {
     let persistanceContainer = PersistanceController.shered
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameView()
                 .environment(\.managedObjectContext, persistanceContainer.container.viewContext)
         }
     }

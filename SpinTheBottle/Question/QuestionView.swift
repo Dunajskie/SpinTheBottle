@@ -13,6 +13,7 @@ struct QuestionView: View {
     @ObservedObject var quest: Question
     var questionType: String
     var person: Person
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -31,7 +32,6 @@ struct QuestionView: View {
                             .font(.system(size: 30))
                             .padding()
                     }
-                    
                     Spacer()
                     VStack {
                         Button(action: {

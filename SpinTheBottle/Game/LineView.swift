@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LineView: View {
     var angle: CGFloat
+    
     var body: some View {
         GeometryReader { proxy in
             Path { path in

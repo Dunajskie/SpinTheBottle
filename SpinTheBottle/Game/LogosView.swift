@@ -11,6 +11,7 @@ struct LogosView: View {
     var persons: [Person]
     var number: Float
     var angle: CGFloat = 0
+    
     var body: some View {
         GeometryReader { proxy in
             ForEach(persons, id: \.id) { person in

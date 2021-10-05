@@ -16,7 +16,6 @@ struct SettingsView: View {
     @State var text = ""
     @State var truth = true
 
-
     var body: some View {
             Form {
                 Section(header: Text("Players number")) {
@@ -27,7 +26,6 @@ struct SettingsView: View {
                     }
                     .pickerStyle(WheelPickerStyle())
                     .onChange(of: selectedNumber, perform: { number in
-
                         settings.circle = SpinerView(number: Int(number) ?? 4)
                         settings.persons = []
                         for iter in 0..<(Int(number) ?? 0) {

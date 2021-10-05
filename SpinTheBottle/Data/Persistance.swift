@@ -13,7 +13,7 @@ struct PersistanceController {
     init() {
         container = NSPersistentContainer(name: "QuestionList")
         container.loadPersistentStores { storeDescription, error in
-            if let error = error as NSError? {
+            if (error as NSError?) != nil {
                 fatalError()
             }
         }

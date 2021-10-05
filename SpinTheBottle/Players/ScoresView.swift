@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ScoresView: View {
     @EnvironmentObject var settings: Settings
+    
     var body: some View {
-        
         List(settings.persons) { person in
             PersonScoreView(person: person)
         }

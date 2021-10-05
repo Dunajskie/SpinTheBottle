@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PersonScoreView: View {
     var person: Person
+    
     var body: some View {
         HStack {
             Text(person.name == "Add person details" ? "Person" : person.name)
@@ -19,7 +20,6 @@ struct PersonScoreView: View {
             Text(String(person.points))
                 .bold()
                 .padding()
-                
         }
     }
 }

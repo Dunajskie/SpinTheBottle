@@ -15,6 +15,7 @@ struct UserSettingsView: View {
     var avatars = ["🐶","🐹","🦊","🐼","🐨","🦁","🐸","🐺","🦄","🦋"]
     @State var avatarChanged = false
     @State var nameChanged = false
+    
     var body: some View {
         Form {
             Section(header: Text("Name")) {

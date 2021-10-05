@@ -11,12 +11,12 @@ struct AddToGameView: View {
     @EnvironmentObject var settings: Settings
     @State var question = ""
     @State var dare = ""
-    var contentView: ContentView
     @State private var delete = false
     @State private var showingQuestionAlert = false
     @State private var showingDareAlert = false
     @State private var showingDeleteAlert = false
-
+    var contentView: GameView
+    
     var body: some View {
             Form {
                 Section(header: Text("Add a question")) {
@@ -50,8 +50,7 @@ struct AddToGameView: View {
                 Section(header: Text("Add a dare")) {
                     Toggle("Delete added questions and dares", isOn: $delete)
                         .onChange(of: delete, perform: { value in
-                            showingDeleteAlert = true
-                        })
+                            showingDeleteAlert = true })
                 }
                 .alert(isPresented: $showingDeleteAlert) {
                     Alert(title: Text("Delete your inputs"), message: Text("Are you sure that you want to delete all your added questions and dares?"),  primaryButton: .default(Text("Yes"), action: {

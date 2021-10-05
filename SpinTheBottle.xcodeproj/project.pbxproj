@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9039836426EB4F37001741CD /* SpinTheBottleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039836326EB4F37001741CD /* SpinTheBottleApp.swift */; };
-		9039836626EB4F37001741CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039836526EB4F37001741CD /* ContentView.swift */; };
+		9039836626EB4F37001741CD /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039836526EB4F37001741CD /* GameView.swift */; };
 		9039836826EB4F3A001741CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9039836726EB4F3A001741CD /* Assets.xcassets */; };
 		9039836B26EB4F3A001741CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9039836A26EB4F3A001741CD /* Preview Assets.xcassets */; };
 		9039837626EB4F3A001741CD /* SpinTheBottleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9039837526EB4F3A001741CD /* SpinTheBottleTests.swift */; };
@@ -52,7 +52,7 @@
 /* Begin PBXFileReference section */
 		9039836026EB4F37001741CD /* SpinTheBottle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpinTheBottle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9039836326EB4F37001741CD /* SpinTheBottleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinTheBottleApp.swift; sourceTree = "<group>"; };
-		9039836526EB4F37001741CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9039836526EB4F37001741CD /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		9039836726EB4F3A001741CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9039836A26EB4F3A001741CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9039836C26EB4F3A001741CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				9039836326EB4F37001741CD /* SpinTheBottleApp.swift */,
-				9039836526EB4F37001741CD /* ContentView.swift */,
+				9039836526EB4F37001741CD /* GameView.swift */,
 				9039839426EF56C8001741CD /* SpinerView.swift */,
 				9039839626EF637E001741CD /* LineView.swift */,
 				9039839826EF8732001741CD /* ArrowView.swift */,
@@ -371,7 +371,7 @@
 				9039838F26EB5439001741CD /* Settings.swift in Sources */,
 				9039839126EB600C001741CD /* SettingsView.swift in Sources */,
 				903983A726F36CF5001741CD /* Task.swift in Sources */,
-				9039836626EB4F37001741CD /* ContentView.swift in Sources */,
+				9039836626EB4F37001741CD /* GameView.swift in Sources */,
 				903983A926F374E2001741CD /* PersonScoreView.swift in Sources */,
 				9039839D26F339C2001741CD /* UserView.swift in Sources */,
 				903983AB26F86A14001741CD /* LogosView.swift in Sources */,
