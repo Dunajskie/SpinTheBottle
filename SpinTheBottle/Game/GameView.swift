@@ -20,7 +20,7 @@ struct GameView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color("LightPink")
+                Color.lightPink
                     .edgesIgnoringSafeArea(.all)
                 VStack(){
                     Group{
@@ -37,7 +37,7 @@ struct GameView: View {
                                     Text( "PLAY" )
                                         .foregroundColor(.white)
                                         .frame(width: 200, height: 40)
-                                        .background(Color("DarkPink"))
+                                        .background(Color.darkPink)
                                         .cornerRadius(15)
                                         .shadow(radius: 3)
                                         .padding()

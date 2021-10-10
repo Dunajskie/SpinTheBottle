@@ -17,7 +17,7 @@ struct QuestionView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color("LightPink")
+                Color.lightPink
                     .edgesIgnoringSafeArea(.all)
                 VStack {
                     HStack() {
@@ -40,7 +40,7 @@ struct QuestionView: View {
                             Text("I GOT IT!")
                                 .foregroundColor(.white)
                                 .frame(width: 300, height: 40)
-                                .background(Color("Green"))
+                                .background(Color.green)
                                 .cornerRadius(7)
                                 .shadow(radius: 4)
                                 .padding(4)
@@ -49,7 +49,7 @@ struct QuestionView: View {
                             Text("DIDN'T MAKE IT")
                                 .foregroundColor(.white)
                                 .frame(width: 300, height: 40)
-                                .background(Color("Red"))
+                                .background(Color.red)
                                 .cornerRadius(7)
                                 .shadow(radius: 4)
                                 

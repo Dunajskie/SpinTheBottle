@@ -29,6 +29,7 @@
 		903983AE26FB3754001741CD /* QuestionList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 903983AC26FB3753001741CD /* QuestionList.xcdatamodeld */; };
 		903983B026FB3CCD001741CD /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903983AF26FB3CCD001741CD /* Persistance.swift */; };
 		903983B226FB41D6001741CD /* MakeQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903983B126FB41D5001741CD /* MakeQuestions.swift */; };
+		9062A7462712EBB500F27E1A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9062A7452712EBB500F27E1A /* Colors.swift */; };
 		90C7B620270AD8E800756FF2 /* AddToGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7B61F270AD8E800756FF2 /* AddToGame.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		903983AD26FB3753001741CD /* QuestionList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuestionList.xcdatamodel; sourceTree = "<group>"; };
 		903983AF26FB3CCD001741CD /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		903983B126FB41D5001741CD /* MakeQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeQuestions.swift; sourceTree = "<group>"; };
+		9062A7452712EBB500F27E1A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		90C7B61F270AD8E800756FF2 /* AddToGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,6 +219,7 @@
 				903983AC26FB3753001741CD /* QuestionList.xcdatamodeld */,
 				903983AF26FB3CCD001741CD /* Persistance.swift */,
 				903983B126FB41D5001741CD /* MakeQuestions.swift */,
+				9062A7452712EBB500F27E1A /* Colors.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9039839B26F32E49001741CD /* ScoresView.swift in Sources */,
+				9062A7462712EBB500F27E1A /* Colors.swift in Sources */,
 				903983B226FB41D6001741CD /* MakeQuestions.swift in Sources */,
 				9039839926EF8732001741CD /* ArrowView.swift in Sources */,
 				9039839326EB6028001741CD /* QuestionView.swift in Sources */,

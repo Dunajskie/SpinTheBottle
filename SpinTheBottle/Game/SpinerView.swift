@@ -24,7 +24,7 @@ struct SpinerView: View {
         GeometryReader { proxy in
             ZStack {
                 Circle()
-                    .foregroundColor(Color("White"))
+                    .foregroundColor(Color.white)
                     .frame(width: proxy.size.width, height: proxy.size.height, alignment: .center)
                 lines
                 LogosView(persons: settings.persons, number: Float(settings.numberOfPlayers) ?? 0)
