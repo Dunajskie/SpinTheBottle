@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  SpinTheBottle
+
+  Created by Michał Dunajski on 11/10/2021.
+  
+*/
+"Add a question" = "Add a question";
+"Enter your question" = "Enter your question";
+"Sure to add question" = "Are you sure that you want to add this question?";
+"Yes" = "Yes";
+"No" = "No";
+"Add a dare" = "Add a dare";
+"Enter your dare" = "Enter your dare";
+"Sure to add dare" = "Are you sure that you want to add this dare?";
+"Delete added questions and dares" = "Delete added questions and dares";
+"Delete your inputs" = "Delete your inputs";
+"Want to delete" = "Are you sure that you want to delete all your added questions and dares?";
+"Add to game" = "Add to game";
+"Your question:" = "Your question:";
+"Your task:" = "Your task:";
+"Add person details" = "Add person details";
+"Person" = "Person";
+"I GOT IT!" = "I GOT IT!";
+"DIDN'T MAKE IT" = "DIDN'T MAKE IT";
+"PLAY" = "PLAY";
+"Truth or dare?" = "Truth or dare?";
+"Pick one" = "Pick one";
+"Truth" = "Truth";
+"Dare" = "Dare";
+"Scores" = "Scores";
+"Name" = "Name";
+"Enter your name" = "Enter your name";
+"Avatar" = "Avatar";
+"Pick your avatar" = "Pick your avatar";
+"Details" = "Details";
+"Players number" = "Players number";
+"Number of players" = "Number of players";
+"Players details" = "Players details";
+"Settings" = "Settings";

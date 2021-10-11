@@ -14,7 +14,7 @@ struct ScoresView: View {
         List(settings.persons) { person in
             PersonScoreView(person: person)
         }
-        .navigationTitle("Scores")
+        .navigationTitle(LocalizedStringKey("Scores"))
         .accentColor( .black)
     }
 }

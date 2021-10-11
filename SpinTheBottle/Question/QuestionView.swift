@@ -24,7 +24,7 @@ struct QuestionView: View {
                         Spacer()
                     }
                     VStack(alignment: .leading) {
-                        Text(questionType == "Truth" ? "Your question:" : "Your task:")
+                        Text(questionType == "Truth" ? LocalizedStringKey("Your question:") : LocalizedStringKey("Your task:"))
                             .font(.system(size: 30))
                             .bold()
                             .padding(.horizontal)
@@ -37,7 +37,7 @@ struct QuestionView: View {
                         Button(action: {
                                 settings.persons[settings.selectedPerson-1].points += 1
                                 self.presentationMode.wrappedValue.dismiss()}) {
-                            Text("I GOT IT!")
+                            Text(LocalizedStringKey("I GOT IT!"))
                                 .foregroundColor(.white)
                                 .frame(width: 300, height: 40)
                                 .background(Color.green)
@@ -46,7 +46,7 @@ struct QuestionView: View {
                                 .padding(4)
                         }
                         Button(action: {self.presentationMode.wrappedValue.dismiss()}) {
-                            Text("DIDN'T MAKE IT")
+                            Text(LocalizedStringKey("DIDN'T MAKE IT"))
                                 .foregroundColor(.white)
                                 .frame(width: 300, height: 40)
                                 .background(Color.red)

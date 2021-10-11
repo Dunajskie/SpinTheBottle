@@ -33,9 +33,8 @@ struct GameView: View {
                             settings.circle.rotate(angle:  360 / Double((Int(settings.numberOfPlayers) ?? 0)) * Double(settings.selectedPerson) - Double(Int.random(in: 5...40)) - 90 + Double(Int.random(in: 1...4) * 360))
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
                             self.showingActionSheet.toggle()
-                                readFile()
                             }}, label: {
-                                    Text( "PLAY" )
+                                    Text(LocalizedStringKey("PLAY"))
                                         .foregroundColor(.white)
                                         .frame(width: 200, height: 40)
                                         .background(Color.darkPink)
@@ -45,11 +44,11 @@ struct GameView: View {
                         })
                     }.frame(maxHeight: .infinity, alignment: .bottom)
                      .actionSheet(isPresented: $showingActionSheet) {
-                        ActionSheet(title: Text("Truth or dare?"), message: Text("Pick one"),
-                            buttons:[ .default(Text("Truth")) { questionType = "Truth"
+                        ActionSheet(title: Text(LocalizedStringKey("Truth or dare?")), message: Text("Pick one"),
+                            buttons:[ .default(Text(LocalizedStringKey("Truth"))) { questionType = "Truth"
                                 self.showQuestionView.toggle()
                             },
-                          .default(Text("Dare")) { questionType = "Dare"
+                          .default(Text(LocalizedStringKey("Dare"))) { questionType = "Dare"
                             self.showQuestionView.toggle()
                           },
                           .cancel()])

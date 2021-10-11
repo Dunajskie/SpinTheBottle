@@ -18,8 +18,8 @@ struct SettingsView: View {
 
     var body: some View {
             Form {
-                Section(header: Text("Players number")) {
-                    Picker("Number of players", selection: $selectedNumber) {
+                Section(header: Text(LocalizedStringKey("Players number"))) {
+                    Picker(LocalizedStringKey("Number of players"), selection: $selectedNumber) {
                         ForEach(numberOfPlayers, id: \.self) {
                             Text($0)
                         }
@@ -34,7 +34,7 @@ struct SettingsView: View {
                         settings.numberOfPlayers = number
                     })
                 }
-                Section(header: Text("Players details")) {
+                Section(header: Text(LocalizedStringKey("Players details"))) {
                     List(settings.persons) { user in
                         NavigationLink(destination: UserSettingsView(user: user)) {
                             UserView(person: user)
@@ -42,7 +42,7 @@ struct SettingsView: View {
                     }
                 }
             }
-            .navigationTitle("Settings")
+            .navigationTitle(LocalizedStringKey("Settings"))
             .onAppear{
                 selectedNumber = settings.numberOfPlayers
             }

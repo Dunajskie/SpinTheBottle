@@ -18,13 +18,13 @@ struct UserSettingsView: View {
     
     var body: some View {
         Form {
-            Section(header: Text("Name")) {
-                TextField("Enter your name", text: $name, onCommit: {
+            Section(header: Text(LocalizedStringKey("Name"))) {
+                TextField(LocalizedStringKey("Enter your name"), text: $name, onCommit: {
                     nameChanged = true
                 })
                 }
-            Section(header: Text("Avatar")) {
-                Picker("Pick your avatar", selection: $avatar) {
+            Section(header: Text(LocalizedStringKey("Avatar"))) {
+                Picker(LocalizedStringKey("Pick your avatar"), selection: $avatar) {
                     ForEach(avatars, id: \.self) {
                         Text($0)
                     }
@@ -35,7 +35,7 @@ struct UserSettingsView: View {
                 })
             }
         }
-        .navigationTitle("Details")
+        .navigationTitle(LocalizedStringKey("Details"))
         .onDisappear(perform: {
             if nameChanged {
                 var index = 0
