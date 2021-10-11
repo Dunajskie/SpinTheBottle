@@ -1,0 +1,36 @@
+{
+    "truths": [
+        {
+            "question": "Did you ever kissed someone you,ve met the same day?"
+        },
+        {
+            "question": "What was the worst kiss you've ever had?"
+        },
+        {
+            "question": "Who in this circle would you really want to kiss, and why?"
+        },
+        {
+            "question": "Who's your celebrity crush?"
+        },
+        {
+            "question": "What is the nastiest thing you've ever done to anyone?"
+        }
+    ],
+    "dares": [
+        {
+            "dare": "Close your eyes and eat whatever the group puts in your mouth (as long as it’s edible and safe, of course)"
+        },
+        {
+            "dare": "Take of your shirt"
+        },
+        {
+            "dare": "Spend 7 minutes in locked room in the dark with nearest person on your left that is opposite sex"
+        },
+        {
+            "dare": "Sit with nothing but your underware for 3 minutes"
+        },
+        {
+            "dare": "Exchange clothing item with person on your right"
+        }
+    ]
+}

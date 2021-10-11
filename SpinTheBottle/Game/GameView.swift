@@ -33,6 +33,7 @@ struct GameView: View {
                             settings.circle.rotate(angle:  360 / Double((Int(settings.numberOfPlayers) ?? 0)) * Double(settings.selectedPerson) - Double(Int.random(in: 5...40)) - 90 + Double(Int.random(in: 1...4) * 360))
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
                             self.showingActionSheet.toggle()
+                                readFile()
                             }}, label: {
                                     Text( "PLAY" )
                                         .foregroundColor(.white)

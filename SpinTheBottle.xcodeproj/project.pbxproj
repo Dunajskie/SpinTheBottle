@@ -30,6 +30,8 @@
 		903983B026FB3CCD001741CD /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903983AF26FB3CCD001741CD /* Persistance.swift */; };
 		903983B226FB41D6001741CD /* MakeQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903983B126FB41D5001741CD /* MakeQuestions.swift */; };
 		9062A7462712EBB500F27E1A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9062A7452712EBB500F27E1A /* Colors.swift */; };
+		9062A7482714105800F27E1A /* quests.json in Resources */ = {isa = PBXBuildFile; fileRef = 9062A7472714105800F27E1A /* quests.json */; };
+		9062A74A2714109900F27E1A /* Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9062A7492714109900F27E1A /* Parsing.swift */; };
 		90C7B620270AD8E800756FF2 /* AddToGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C7B61F270AD8E800756FF2 /* AddToGame.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		903983AF26FB3CCD001741CD /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		903983B126FB41D5001741CD /* MakeQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeQuestions.swift; sourceTree = "<group>"; };
 		9062A7452712EBB500F27E1A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		9062A7472714105800F27E1A /* quests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quests.json; sourceTree = "<group>"; };
+		9062A7492714109900F27E1A /* Parsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsing.swift; sourceTree = "<group>"; };
 		90C7B61F270AD8E800756FF2 /* AddToGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +135,7 @@
 		9039836226EB4F37001741CD /* SpinTheBottle */ = {
 			isa = PBXGroup;
 			children = (
+				9062A7472714105800F27E1A /* quests.json */,
 				90C7B61E270AD8C400756FF2 /* Add to game */,
 				903983B326FB41EB001741CD /* Data */,
 				903983A526F36855001741CD /* Question */,
@@ -220,6 +225,7 @@
 				903983AF26FB3CCD001741CD /* Persistance.swift */,
 				903983B126FB41D5001741CD /* MakeQuestions.swift */,
 				9062A7452712EBB500F27E1A /* Colors.swift */,
+				9062A7492714109900F27E1A /* Parsing.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -336,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9039836B26EB4F3A001741CD /* Preview Assets.xcassets in Resources */,
+				9062A7482714105800F27E1A /* quests.json in Resources */,
 				9039836826EB4F3A001741CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +375,7 @@
 				9039839326EB6028001741CD /* QuestionView.swift in Sources */,
 				9039839526EF56C8001741CD /* SpinerView.swift in Sources */,
 				903983A126F346CE001741CD /* UserSettingsView.swift in Sources */,
+				9062A74A2714109900F27E1A /* Parsing.swift in Sources */,
 				903983AE26FB3754001741CD /* QuestionList.xcdatamodeld in Sources */,
 				90C7B620270AD8E800756FF2 /* AddToGame.swift in Sources */,
 				903983B026FB3CCD001741CD /* Persistance.swift in Sources */,
