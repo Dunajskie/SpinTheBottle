@@ -47,7 +47,7 @@ struct AddToGameView: View {
                         dare = ""
                     }) , secondaryButton: .cancel(Text(LocalizedStringKey("No")), action: {dare = ""}))
                 }
-                Section(header: Text(LocalizedStringKey("Add a dare"))) {
+                Section(header: Text(LocalizedStringKey("Delete"))) {
                     Toggle(LocalizedStringKey("Delete added questions and dares"), isOn: $delete)
                         .onChange(of: delete, perform: { value in
                             showingDeleteAlert = true })
